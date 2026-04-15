@@ -1,0 +1,8 @@
+﻿/* Vendor CSS bundle for Bootstrap template */
+@import url("../vendors/bootstrap/bootstrap.min.css");
+@import url("../vendors/plugins/magnific-popup.css");
+@import url("../vendors/plugins/jquery-ui.css");
+@import url("../vendors/plugins/owl.carousel.min.css");
+@import url("../vendors/plugins/owl.theme.default.min.css");
+@import url("../vendors/plugins/aos.css");
+@import url("../fonts/icomoon/style.css");
