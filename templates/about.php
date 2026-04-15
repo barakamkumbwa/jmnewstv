@@ -1,6 +1,11 @@
 <?php
-$pageTitle = 'JM News TV | About';
-$pageDescription = 'JM News TV is a professional football media company based in Dar es Salaam, Tanzania.';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'About JM News TV | Football Media Platform';
+$pageDescription = 'Learn about JM News TV, a football media platform covering news, analysis, interviews, and highlights from Tanzania.';
+$pageKeywords = 'about JM News TV, Tanzania football media, sports newsroom, football analysis';
+$pageOgImage = jm_site_url('static/assets/images/about_1.jpg');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('about.php');
 include __DIR__ . '/partials/header.php';
 ?>
 

@@ -1,8 +1,58 @@
 <?php
-$pageTitle = 'JM News TV | News';
-$pageDescription = 'JM News TV brings football news, club updates, and analysis from Tanzania.';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'Latest Football News | JM News TV';
+$pageDescription = 'Stay updated with the latest football news, club updates, and analysis from Tanzania.';
+$pageKeywords = 'latest football news, Tanzania football updates, Yanga, Simba, Azam, JM News TV';
+$pageOgImage = jm_site_url('static/assets/images/hero_bg_3.jpg');
+$pageOgType = 'article';
+$pageCanonical = jm_site_url('news.php');
 require_once __DIR__ . '/partials/news-posts.php';
 $newsItems = jm_news_posts_get_items();
+$seoStructuredData = array(
+    array(
+        '@context' => 'https://schema.org',
+        '@type' => 'WebPage',
+        'name' => $pageTitle,
+        'url' => $pageCanonical,
+        'description' => $pageDescription,
+    ),
+);
+foreach ($newsItems as $index => $item) {
+    $publishedAt = isset($item['published_at']) ? trim((string) $item['published_at']) : '';
+    $publishedDate = '';
+    if ($publishedAt !== '') {
+        $parsedDate = DateTime::createFromFormat('M j, Y', $publishedAt);
+        if ($parsedDate instanceof DateTime) {
+            $publishedDate = $parsedDate->format('c');
+        }
+    }
+    $seoStructuredData[] = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'Article',
+        'headline' => $item['title'],
+        'description' => $item['description'],
+        'image' => jm_asset_url($item['image']),
+        'author' => array(
+            '@type' => 'Organization',
+            'name' => isset($item['author']) && $item['author'] !== '' ? $item['author'] : 'JM News TV',
+        ),
+        'publisher' => array(
+            '@type' => 'NewsMediaOrganization',
+            'name' => 'JM News TV',
+            'logo' => array(
+                '@type' => 'ImageObject',
+                'url' => jm_site_url('static/assets/images/jmnewslogo.png'),
+            ),
+        ),
+        'mainEntityOfPage' => array(
+            '@type' => 'WebPage',
+            '@id' => $pageCanonical . '#news-item-' . $index,
+        ),
+    );
+    if ($publishedDate !== '') {
+        $seoStructuredData[count($seoStructuredData) - 1]['datePublished'] = $publishedDate;
+    }
+}
 include __DIR__ . '/partials/header.php';
 ?>
 
@@ -20,9 +70,9 @@ include __DIR__ . '/partials/header.php';
 <div class="site-section">
   <div class="container">
     <div class="row mb-5">
-<?php foreach ($newsItems as $item): ?>
+<?php foreach ($newsItems as $index => $item): ?>
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="post-entry">
+        <article class="post-entry" id="news-item-<?= (int) $index ?>">
           <div class="image">
             <img src="<?= htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?>" class="img-fluid">
           </div>
@@ -31,7 +81,7 @@ include __DIR__ . '/partials/header.php';
             <span class="text-uppercase date d-block mb-3"><small>By <?= htmlspecialchars($item['author'], ENT_QUOTES, 'UTF-8') ?> - <?= htmlspecialchars($item['published_at'], ENT_QUOTES, 'UTF-8') ?></small></span>
             <p class="mb-0"><?= htmlspecialchars($item['description'], ENT_QUOTES, 'UTF-8') ?></p>
           </div>
-        </div>
+        </article>
       </div>
 <?php endforeach; ?>
     </div>

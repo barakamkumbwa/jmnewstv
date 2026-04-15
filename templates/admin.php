@@ -1,12 +1,18 @@
 <?php
+require_once __DIR__ . '/partials/seo.php';
 $sessionName = 'jm_news_admin_auth';
 if (session_status() === PHP_SESSION_NONE) {
     session_name($sessionName);
     session_start();
 }
 
-$pageTitle = 'JM News TV | Content Admin';
+$pageTitle = 'JM News TV Admin Panel';
 $pageDescription = 'Manage JM News TV news posts and recent analysis videos.';
+$pageKeywords = 'JM News TV admin, content management, football news admin';
+$pageRobots = 'noindex,nofollow';
+$pageOgImage = jm_site_url('static/assets/images/jmnewslogo.png');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('admin.php');
 require_once __DIR__ . '/partials/recent-analysis.php';
 require_once __DIR__ . '/partials/news-posts.php';
 

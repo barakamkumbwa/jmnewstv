@@ -1,6 +1,11 @@
 <?php
-$pageTitle = 'JM News TV | Advertise';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'Advertise with JM News TV';
 $pageDescription = 'Advertise with JM News TV and reach engaged football audiences across Tanzania.';
+$pageKeywords = 'advertise football, Tanzania sports ads, JM News TV advertising';
+$pageOgImage = jm_site_url('static/assets/images/img_1.jpg');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('advertise.php');
 include __DIR__ . '/partials/header.php';
 ?>
 

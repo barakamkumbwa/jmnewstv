@@ -1,6 +1,11 @@
 <?php
-$pageTitle = 'JM News TV | Videos';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'Football Videos & Analysis | JM News TV';
 $pageDescription = 'Watch football highlights, interviews, and match analysis from JM News TV.';
+$pageKeywords = 'football videos, match analysis, interviews, Tanzania football';
+$pageOgImage = jm_site_url('static/assets/images/hero_bg_3.jpg');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('video.php');
 require_once __DIR__ . '/partials/recent-analysis.php';
 $recentAnalysisItems = jm_recent_analysis_get_items();
 include __DIR__ . '/partials/header.php';

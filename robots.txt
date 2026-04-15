@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /templates/
+Disallow: /admin.php
+
+Sitemap: https://jmnewstv.onrender.com/sitemap.xml

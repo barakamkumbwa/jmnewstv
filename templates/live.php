@@ -1,6 +1,11 @@
 <?php
-$pageTitle = 'JM News TV | Live';
-$pageDescription = 'Watch live football discussions and real-time updates on JM News TV.';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'Live Football Coverage | JM News TV';
+$pageDescription = 'Watch live football discussions and real-time updates from JM News TV.';
+$pageKeywords = 'live football, Tanzania live coverage, football discussions, JM News TV';
+$pageOgImage = jm_site_url('static/assets/images/hero_bg_3.jpg');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('live.php');
 include __DIR__ . '/partials/header.php';
 ?>
 
@@ -40,7 +45,7 @@ include __DIR__ . '/partials/header.php';
       <div class="col-md-6 col-lg-4">
         <div class="post-entry">
           <div class="image">
-            <img src="../static/assets/images/img_1.jpg" alt="Image" class="img-fluid">
+            <img src="../static/assets/images/img_1.jpg" alt="JM News TV live football analysis preview" class="img-fluid">
           </div>
           <div class="text p-4">
             <h2 class="h5 text-black">Match preview and tactics</h2>
@@ -51,7 +56,7 @@ include __DIR__ . '/partials/header.php';
       <div class="col-md-6 col-lg-4">
         <div class="post-entry">
           <div class="image">
-            <img src="../static/assets/images/img_2.jpg" alt="Image" class="img-fluid">
+            <img src="../static/assets/images/img_2.jpg" alt="JM News TV fan reaction coverage" class="img-fluid">
           </div>
           <div class="text p-4">
             <h2 class="h5 text-black">Fan reaction</h2>
@@ -62,7 +67,7 @@ include __DIR__ . '/partials/header.php';
       <div class="col-md-6 col-lg-4">
         <div class="post-entry">
           <div class="image">
-            <img src="../static/assets/images/img_3.jpg" alt="Image" class="img-fluid">
+            <img src="../static/assets/images/img_3.jpg" alt="JM News TV studio discussion highlight" class="img-fluid">
           </div>
           <div class="text p-4">
             <h2 class="h5 text-black">Breaking news</h2>

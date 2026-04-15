@@ -1,6 +1,11 @@
 <?php
-$pageTitle = 'JM News TV | Team';
-$pageDescription = 'Meet the team behind JM News TV, a professional football media company based in Dar es Salaam, Tanzania.';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'JM News TV Team & Management';
+$pageDescription = 'Meet the JM News TV team and management behind our football news, analysis, and digital sports coverage.';
+$pageKeywords = 'JM News TV team, football management, Tanzania sports media, newsroom team';
+$pageOgImage = jm_site_url('static/assets/images/person_1.jpg');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('team.php');
 include __DIR__ . '/partials/header.php';
 ?>
 
@@ -230,7 +235,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="UMA CHIZA BENE BABU">
+            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="UMA CHIZA BENE BABU profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">UMA CHIZA BENE BABU </h4>
@@ -248,7 +253,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="Saidi Abdallah Juma">
+            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="Saidi Abdallah Juma profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Saidi Abdallah Juma</h4>
@@ -266,7 +271,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_3.jpg" class="img-fluid" alt="Heri Saidi Lyonga">
+            <img src="../static/assets/images/person_3.jpg" class="img-fluid" alt="Heri Saidi Lyonga profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Heri Saidi Lyonga</h4>
@@ -284,7 +289,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_4.jpg" class="img-fluid" alt="Juma Miraji Bakari">
+            <img src="../static/assets/images/person_4.jpg" class="img-fluid" alt="Juma Miraji Bakari profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Juma Miraji Bakari</h4>
@@ -302,7 +307,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_1.jpg" class="img-fluid" alt="Bakari Hussein Bushiri">
+            <img src="../static/assets/images/person_1.jpg" class="img-fluid" alt="Bakari Hussein Bushiri profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Bakari Hussein Bushiri</h4>
@@ -320,7 +325,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="Ayubu Danieli Msokolo">
+            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="Ayubu Danieli Msokolo profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Ayubu Danieli Msokolo</h4>
@@ -338,7 +343,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_3.jpg" class="img-fluid" alt="Sports Host">
+            <img src="../static/assets/images/person_3.jpg" class="img-fluid" alt="JM News TV sports host profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Issa Khamis Mbwana</h4>
@@ -356,7 +361,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../static/assets/images/person_4.jpg" class="img-fluid" alt="Shaibu Hamza Twaha">
+            <img src="../static/assets/images/person_4.jpg" class="img-fluid" alt="Shaibu Hamza Twaha profile photo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Shaibu Hamza Twaha</h4>

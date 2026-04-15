@@ -1,6 +1,11 @@
 <?php
-$pageTitle = 'JM News TV | Contact';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'Contact JM News TV';
 $pageDescription = 'Contact JM News TV for advertising, editorial, and football media partnerships.';
+$pageKeywords = 'contact JM News TV, football media contact, Tanzania sports partnerships';
+$pageOgImage = jm_site_url('static/assets/images/hero_bg_3.jpg');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('contact.php');
 include __DIR__ . '/partials/header.php';
 ?>
 

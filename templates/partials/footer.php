@@ -1,3 +1,4 @@
+      </main>
       <footer class="site-footer border-top">
       <div class="container">
         <div class="row">

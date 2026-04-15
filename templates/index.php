@@ -1,6 +1,28 @@
 <?php
-$pageTitle = 'JM News TV | Home';
-$pageDescription = 'JM News TV is a professional football media company based in Dar es Salaam, Tanzania.';
+require_once __DIR__ . '/partials/seo.php';
+$pageTitle = 'JM News TV | Tanzania Football News & Analysis';
+$pageDescription = 'Latest football news, analysis, highlights, and interviews from Tanzania.';
+$pageKeywords = 'football, Tanzania football news, Yanga SC, Simba SC, Azam FC, sports analysis, JM News TV';
+$pageOgImage = jm_site_url('static/assets/images/newspicture3.jpeg');
+$pageOgType = 'website';
+$pageCanonical = jm_site_url('/');
+$seoStructuredData = array(
+    array(
+        '@context' => 'https://schema.org',
+        '@type' => 'NewsMediaOrganization',
+        'name' => 'JM News TV',
+        'url' => jm_site_url('/'),
+        'logo' => jm_site_url('static/assets/images/jmnewslogo.png'),
+        'description' => 'Football news and analysis for Tanzanian audiences.',
+    ),
+    array(
+        '@context' => 'https://schema.org',
+        '@type' => 'WebSite',
+        'name' => 'JM News TV',
+        'url' => jm_site_url('/'),
+        'description' => 'Latest football news, analysis, highlights, and interviews from Tanzania.',
+    ),
+);
 require_once __DIR__ . '/partials/recent-analysis.php';
 $recentAnalysisItems = jm_recent_analysis_get_items();
 include __DIR__ . '/partials/header.php';
