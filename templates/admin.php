@@ -7,8 +7,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
 $pageTitle = 'JM News TV | Content Admin';
 $pageDescription = 'Manage JM News TV news posts and recent analysis videos.';
-require_once 'partials/recent-analysis.php';
-require_once 'partials/news-posts.php';
+require_once __DIR__ . '/partials/recent-analysis.php';
+require_once __DIR__ . '/partials/news-posts.php';
 
 $adminUsername = getenv('JM_NEWS_ADMIN_USERNAME') ?: 'admin';
 $adminPassword = getenv('JM_NEWS_ADMIN_PASSWORD') ?: 'jmnews2026';
@@ -161,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(../static/assets/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -410,4 +410,4 @@ include 'partials/header.php';
   </div>
 </div>
 
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>

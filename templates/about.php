@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'JM News TV | About';
 $pageDescription = 'JM News TV is a professional football media company based in Dar es Salaam, Tanzania.';
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(../static/assets/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -16,7 +16,7 @@ include 'partials/header.php';
 </div>
 
 <style>
-/* CoreBiz About Section */
+/* About Section */
 .about {
   --surface-color: #ffffff;
   --background-color: #ffffff;
@@ -1095,7 +1095,7 @@ section,
 
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
         <div class="image-container">
-          <img src="../CoreBiz/assets/img/about/about-square-8.webp" alt="About JM News TV" class="img-fluid">
+          <img src="../static/assets/images/about_1.jpg" alt="About JM News TV" class="img-fluid">
           <div class="image-overlay">
             <div class="overlay-content">
               <i class="bi bi-award"></i>
@@ -1237,7 +1237,7 @@ section,
     <div class="org-tree" data-aos="fade-up" data-aos-delay="100">
       <div class="org-node org-root delay-1">
         <div class="org-circle">
-          <img src="../CoreBiz/assets/img/person/person-f-1.webp" class="org-photo" alt="Juma Cheza Ben">
+          <img src="../static/assets/images/person_1.jpg" class="org-photo" alt="Juma Cheza Ben">
         </div>
         <div class="org-meta">
           <h4>UMA CHIZA BENE BABU </h4>
@@ -1249,7 +1249,7 @@ section,
 
       <div class="org-node org-ceo delay-2">
         <div class="org-circle">
-          <img src="../CoreBiz/assets/img/person/person-m-2.webp" class="org-photo" alt="Saidi Abdallah Juma">
+          <img src="../static/assets/images/person_2.jpg" class="org-photo" alt="Saidi Abdallah Juma">
         </div>
         <div class="org-meta">
           <h4>Saidi Abdallah Juma</h4>
@@ -1264,7 +1264,7 @@ section,
         <div class="org-row core">
           <div class="org-node delay-3">
             <div class="org-circle">
-              <img src="../CoreBiz/assets/img/person/person-f-3.webp" class="org-photo" alt="Heri Saidi Lyonga">
+              <img src="../static/assets/images/person_3.jpg" class="org-photo" alt="Heri Saidi Lyonga">
             </div>
             <div class="org-meta">
               <h4>Heri Saidi Lyonga</h4>
@@ -1273,7 +1273,7 @@ section,
           </div>
           <div class="org-node delay-4">
             <div class="org-circle">
-              <img src="../CoreBiz/assets/img/person/person-m-4.webp" class="org-photo" alt="Juma Miraji Bakari">
+              <img src="../static/assets/images/person_4.jpg" class="org-photo" alt="Juma Miraji Bakari">
             </div>
             <div class="org-meta">
               <h4>Juma Miraji Bakari</h4>
@@ -1282,7 +1282,7 @@ section,
           </div>
           <div class="org-node delay-5">
             <div class="org-circle">
-              <img src="../CoreBiz/assets/img/person/person-f-1.webp" class="org-photo" alt="Bakari Hussein Bushiri">
+              <img src="../static/assets/images/person_1.jpg" class="org-photo" alt="Bakari Hussein Bushiri">
             </div>
             <div class="org-meta">
               <h4>Bakari Hussein Bushiri</h4>
@@ -1297,7 +1297,7 @@ section,
 
         <div class="org-node org-support-node delay-6">
           <div class="org-circle">
-            <img src="../CoreBiz/assets/img/about/about-square-8.webp" class="org-photo" alt="JM News TV support team">
+            <img src="../static/assets/images/about_2.jpg" class="org-photo" alt="JM News TV support team">
           </div>
           <div class="org-meta">
             <h4>Content Support Unit</h4>
@@ -1371,4 +1371,4 @@ section,
   </div>
 </section>
 
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>

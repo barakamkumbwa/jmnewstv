@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'JM News TV | Advertise';
 $pageDescription = 'Advertise with JM News TV and reach engaged football audiences across Tanzania.';
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(../static/assets/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -51,4 +51,4 @@ include 'partials/header.php';
   </div>
 </div>
 
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>

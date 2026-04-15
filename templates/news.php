@@ -1,9 +1,9 @@
 <?php
 $pageTitle = 'JM News TV | News';
 $pageDescription = 'JM News TV brings football news, club updates, and analysis from Tanzania.';
-require_once 'partials/news-posts.php';
+require_once __DIR__ . '/partials/news-posts.php';
 $newsItems = jm_news_posts_get_items();
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(../static/assets/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -52,4 +52,4 @@ include 'partials/header.php';
     </div>
   </div>
 </div>
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>

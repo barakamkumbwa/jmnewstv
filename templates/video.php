@@ -1,9 +1,9 @@
 <?php
 $pageTitle = 'JM News TV | Videos';
 $pageDescription = 'Watch football highlights, interviews, and match analysis from JM News TV.';
-require_once 'partials/recent-analysis.php';
+require_once __DIR__ . '/partials/recent-analysis.php';
 $recentAnalysisItems = jm_recent_analysis_get_items();
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(../static/assets/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -75,4 +75,4 @@ include 'partials/header.php';
   }
 </style>
 
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>

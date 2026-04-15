@@ -1,9 +1,9 @@
 <?php
 $pageTitle = 'JM News TV | Home';
 $pageDescription = 'JM News TV is a professional football media company based in Dar es Salaam, Tanzania.';
-require_once 'partials/recent-analysis.php';
+require_once __DIR__ . '/partials/recent-analysis.php';
 $recentAnalysisItems = jm_recent_analysis_get_items();
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="slide-one-item home-slider owl-carousel">
@@ -294,4 +294,4 @@ include 'partials/header.php';
     </div>
   </div>
 </section>
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>

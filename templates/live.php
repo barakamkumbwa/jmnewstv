@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'JM News TV | Live';
 $pageDescription = 'Watch live football discussions and real-time updates on JM News TV.';
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(../static/assets/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -74,4 +74,4 @@ include 'partials/header.php';
   </div>
 </div>
 
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>

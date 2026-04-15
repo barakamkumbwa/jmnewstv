@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'JM News TV | Team';
 $pageDescription = 'Meet the team behind JM News TV, a professional football media company based in Dar es Salaam, Tanzania.';
-include 'partials/header.php';
+include __DIR__ . '/partials/header.php';
 ?>
 
 <div class="site-blocks-cover overlay" style="background-image: url(../static/assets/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -16,7 +16,7 @@ include 'partials/header.php';
 </div>
 
 <style>
-/* CoreBiz Team Section */
+/* Team Section */
 .team {
   --surface-color: #ffffff;
   --background-color: #ffffff;
@@ -230,7 +230,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-m-2.webp" class="img-fluid" alt="UMA CHIZA BENE BABU">
+            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="UMA CHIZA BENE BABU">
           </div>
           <div class="member-content">
             <h4 class="member-name">UMA CHIZA BENE BABU </h4>
@@ -248,7 +248,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-m-2.webp" class="img-fluid" alt="Saidi Abdallah Juma">
+            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="Saidi Abdallah Juma">
           </div>
           <div class="member-content">
             <h4 class="member-name">Saidi Abdallah Juma</h4>
@@ -266,7 +266,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-f-3.webp" class="img-fluid" alt="Heri Saidi Lyonga">
+            <img src="../static/assets/images/person_3.jpg" class="img-fluid" alt="Heri Saidi Lyonga">
           </div>
           <div class="member-content">
             <h4 class="member-name">Heri Saidi Lyonga</h4>
@@ -284,7 +284,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-m-4.webp" class="img-fluid" alt="Juma Miraji Bakari">
+            <img src="../static/assets/images/person_4.jpg" class="img-fluid" alt="Juma Miraji Bakari">
           </div>
           <div class="member-content">
             <h4 class="member-name">Juma Miraji Bakari</h4>
@@ -302,7 +302,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-f-6.webp" class="img-fluid" alt="Bakari Hussein Bushiri">
+            <img src="../static/assets/images/person_1.jpg" class="img-fluid" alt="Bakari Hussein Bushiri">
           </div>
           <div class="member-content">
             <h4 class="member-name">Bakari Hussein Bushiri</h4>
@@ -320,7 +320,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-m-8.webp" class="img-fluid" alt="Ayubu Danieli Msokolo">
+            <img src="../static/assets/images/person_2.jpg" class="img-fluid" alt="Ayubu Danieli Msokolo">
           </div>
           <div class="member-content">
             <h4 class="member-name">Ayubu Danieli Msokolo</h4>
@@ -338,7 +338,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-m-12.webp" class="img-fluid" alt="Sports Host">
+            <img src="../static/assets/images/person_3.jpg" class="img-fluid" alt="Sports Host">
           </div>
           <div class="member-content">
             <h4 class="member-name">Issa Khamis Mbwana</h4>
@@ -356,7 +356,7 @@ section,
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
         <div class="member-card">
           <div class="member-image-wrapper">
-            <img src="../CoreBiz/assets/img/person/person-f-7.webp" class="img-fluid" alt="Shaibu Hamza Twaha">
+            <img src="../static/assets/images/person_4.jpg" class="img-fluid" alt="Shaibu Hamza Twaha">
           </div>
           <div class="member-content">
             <h4 class="member-name">Shaibu Hamza Twaha</h4>
@@ -374,4 +374,4 @@ section,
   </div>
 </section>
 
-<?php include 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>
